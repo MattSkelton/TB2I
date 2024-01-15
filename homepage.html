@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3497f25522.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#lifeSkills">Life Skills</a></li>
+                <li><a href="#vocationalSkills">Vocational Skills</a></li>
+                <li>                
+                    <div class="donate">
+                        <a href="#donate">Donate</a>
+                    </div>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div class="logo-container">
+        <img src="./images/logo.png" class="logo-fs">
+    </div>
+
+    <div class="mission-container">
+        <img src="./images/hp-mission.png" class="mission-img">
+        <div>
+            <h1>Our Mission</h1>
+            <div class="orange-bar"></div>
+            <p>
+                It is the mission, duty, and sole purpose of The Bridge to Independence is to provide two-year
+                comprehensive vocational and life skills education in college campus environment to at-risk young
+                adults between the ages 18 to 25, with the emphasis placed on young adults who are aging out of the
+                foster care system. This “Bridge” will provide all the necessary support to each student as they travel
+                through the difficult transition from dependence to independence.                
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+            
+        }   
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+
+</body>
+</html>
