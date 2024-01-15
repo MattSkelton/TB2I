@@ -69,7 +69,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #F26E22;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -100,6 +100,7 @@ nav ul li a:hover::after{
     height: 45px;
     display: flex;
     margin-top: -10px;
+    transition: background .75s, transform .75s;
 }
 
 .donate a{
@@ -109,14 +110,23 @@ nav ul li a:hover::after{
     align-self: center;   
     padding-left: 18px;
 }
+
+.donate:hover{
+    transform: scale(1.05);
+}
+
+.donate a::after{
+    height: 0px;
+}
+
 .mission-container{
     display: flex;
     margin-top: 100px;
     padding-top: 100px;
+    padding-bottom: 100px;
     background: #12A67C;
     color: #FFF;
     justify-content: space-evenly;
-    
 }
 
 .mission-img{
@@ -127,6 +137,7 @@ nav ul li a:hover::after{
 
 .mission-container h1{
     margin-bottom: 10px;
+    margin-top: 60px;
 }
 .orange-bar{
     background: #F26E22;
@@ -139,6 +150,99 @@ nav ul li a:hover::after{
     width: 500px;
     font-size: 18px;
 }
+
+.wws-container{
+    display: flex;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #FFF;
+    color: #000;
+    justify-content: space-evenly;
+    
+}
+
+.wws-img{
+    max-width: 45%;
+    height: auto;
+    width: auto;
+}
+
+.wws-container h1{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.wws-container h3{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.wws-container p{
+    width: 500px;
+    font-size: 18px;
+}
+
+.vision-container{
+    display: flex;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(242, 110, 34, 0.92);
+    color: #FFF;
+    justify-content: space-evenly;
+    
+}
+
+.vision-img{
+    max-width: 45%;
+    height: auto;
+    width: 400px;
+}
+
+.vision-container h1{
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.green-bar{
+    background: #12A67C;
+    width: 193px;
+    height: 6px;
+    margin-bottom: 15px;
+
+}
+.vision-container p{
+    width: 500px;
+    font-size: 18px;
+}
+
+.vision-container h3{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.threeBox-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+
+.boxes{
+    background: #707070;
+    width: 325px;
+    height: 530px;
+    
+}
+
+.footer{
+    background: #12A67C;
+    color: #FFF;
+}
+
+
 /*------ css for small screens ------ */
 nav .fas {
     display: none;
