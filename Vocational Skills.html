@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocational Skills - The Bridge To Independence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3497f25522.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#lifeSkills">Life Skills</a></li>
+                <li><a href="#vocationalSkills">Vocational Skills</a></li>
+                <li>                
+                    <div class="donate">
+                        <a href="#donate">Donate</a>
+                    </div>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div class="background-container">
+            <img src="./images/vs-background.png" class="logo-fs">
+            <div class="overlay">
+                <h1>Vocational Skills</h1>
+                <p>Rev Up Your Career: Diesel Vocational Training at Its Best!</p>
+            </div>
+    </div>
+
+    <div class="journey-container">
+        <img src="./images/vs-journey.png" class="journey-img">
+        <div>
+            <h1>The Journey</h1>
+            <div class="orange-bar"></div>
+            <p>
+                Embark on a transformative journey at The Bridge to Independence's 2-year diesel 
+                tech program, where hands-on training hones your skills in engine diagnostics and 
+                repair. Our comprehensive curriculum ensures a mastery of the intricacies of diesel 
+                mechanics, setting the stage for a successful career in the field.            
+            </p>
+        </div>
+    </div>
+
+    <div class="progDescription-container">
+        <div>
+            <h1>Program Description</h1>
+            <div class="orange-bar"></div>
+            <p>
+                Prepare for a rewarding career as an entry-level truck/heavy equipment technician 
+                through The Bridge's 2-year diesel tech program. Our curriculum is meticulously crafted 
+                to emphasize hands-on learning, utilizing actual customer projects and mock-up units, 
+                mirroring real industry scenarios. Dive into extensive shop work covering engines, transmissions, 
+                differentials, brakes, steering, suspension, cooling, hydraulics, undercarriages, fuel and air 
+                systems, and receive an introduction to vehicle/equipment operation.
+                <br><br>
+                Throughout the program, theory and troubleshooting are integrated, addressing challenges in the 
+                repair and maintenance of diverse automotive components. Safety and basic welding procedures are
+                also incorporated into the coursework, providing a holistic skill set for our graduates. 
+                <br><br>
+                Successful completion of each semester, or instructor permission, is essential for progression, 
+                ensuring that students grasp the foundational knowledge required for the subsequent phases of the 
+                program. Placement in specific English and math courses is determined by the college assessment 
+                test, ensuring a tailored educational experience for each student. Join us in transforming your 
+                passion for diesel technology into a thriving career.              
+            </p>
+        </div>
+        <img src="./images/vs-description.png" class="progDescription-img">
+    </div>
+
+    <div class="journey-container">
+        <div class="donate-container">
+            <h2>Interested in helping us fund our program?</h2>
+            <p>
+                Donate as little as $5 to allow us to change the lives of foster children all over the country.        
+            </p>
+            <div class="box-button box-donate orange">
+                <a href="#">Donate</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="footer-tabs">
+            <li><a href="#about">About</a></li>
+            <li><a href="#lifeSkills">Life Skills</a></li>
+            <li><a href="#vocationalSkills">Vocational Skills</a></li>
+            <li><a href="#donate">Donate</a></li>
+        </ul>
+        <div class="content-container">
+            <div class = "disclaimer-container">
+                <p>
+                    All rights reserved. “The Bridge to Independence” is a registered service mark owned by The Bridge to 
+                    Independence®. The Bridge to Independence® is a tax-exempt 501(C)(3) nonprofit organization (Tax ID: 
+                    84-3978501).  Your restricted gift is tax-deductible as allowed by law.
+                </p>
+            </div>
+            <div class = "address-container">
+                <p>Headquarters</p>
+                <p>1201 N Orange Street #400 Wilmington, DE 19801</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+            
+        }   
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+
+</body>
+</html>
