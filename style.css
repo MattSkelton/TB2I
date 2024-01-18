@@ -18,10 +18,12 @@ html{
 .container{
     padding: 10px 10%;
 }
+
 .header{
     width: 100%;
     height: 135px;
 }
+
 nav{
     width: 100%;
     height: 135px;
@@ -33,6 +35,7 @@ nav{
     justify-content: space-between;
     stroke-width: 0.5px;
     stroke: #000;
+    z-index: 3;
 }
 
 .logo{
@@ -86,11 +89,11 @@ nav ul li a:hover::after{
     justify-content: center;
     margin-top: 20px;
 }
+
 .logo-fs{
     width: 60%;
     height:auto;
 }
-
 
 .donate{
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -119,105 +122,12 @@ nav ul li a:hover::after{
     height: 0px;
 }
 
-.mission-container{
-    display: flex;
-    margin-top: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: #12A67C;
-    color: #FFF;
-    justify-content: space-evenly;
-}
-
-.mission-img{
-    width: 500px;
-    height: auto;
-    /*margin-left: 100px;*/
-}
-
-.mission-container h1{
-    margin-bottom: 10px;
-    margin-top: 60px;
-}
 .orange-bar{
     background: #F26E22;
     width: 193px;
     height: 6px;
     margin-bottom: 15px;
 
-}
-.mission-container p{
-    width: 500px;
-    font-size: 18px;
-}
-
-.wws-container{
-    display: flex;
-    margin-top: 100px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    background: #FFF;
-    color: #000;
-    justify-content: space-evenly;
-    
-}
-
-.wws-img{
-    max-width: 45%;
-    height: auto;
-    width: auto;
-}
-
-.wws-container h1{
-    margin-bottom: 10px;
-    margin-top: 40px;
-}
-
-.wws-container h3{
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-.wws-container p{
-    width: 500px;
-    font-size: 18px;
-}
-
-.vision-container{
-    display: flex;
-    margin-top: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: rgba(242, 110, 34, 0.92);
-    color: #FFF;
-    justify-content: space-evenly;
-    
-}
-
-.vision-img{
-    max-width: 45%;
-    height: auto;
-    width: 400px;
-}
-
-.vision-container h1{
-    margin-bottom: 10px;
-    margin-top: 60px;
-}
-.green-bar{
-    background: #12A67C;
-    width: 193px;
-    height: 6px;
-    margin-bottom: 15px;
-
-}
-.vision-container p{
-    width: 500px;
-    font-size: 18px;
-}
-
-.vision-container h3{
-    margin-bottom: 30px;
-    margin-top: 20px;
 }
 
 .threeBox-container{
@@ -298,6 +208,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: flex-start;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 .footer ul li{
     display: inline-block;
@@ -357,25 +268,121 @@ nav ul li a:hover::after{
     margin-bottom: 5px;
 }
 
-.donate-container{
-    background: #F26E22;
-    color: #FFF;
+/*----------- css for containers ------------ */
+
+
+.ls-white-container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    
-}
-.orange{
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: #FFF;
-    box-shadow: -1px 4px 9px 2px rgba(0,0,0,0.75);
+    color: #000;
+    justify-content: space-evenly;
 }
 
-.orange a {
-    color: #000;
+.ls-white-img{
+    width: 600px;
+    height: auto;
+}
+
+.ls-white-container h1{
+    margin-bottom: 10px;
+    margin-top: 60px;
+    color: #12A67C;
+}
+
+.ls-white-container h3{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.ls-white-container p{
+    width: 500px;
     font-size: 18px;
 }
-/*----------- css for vs ------------ */
+
+.ls-white-container ul{
+    margin-left: 15px;
+}
+
+.ls-white-container ul li{
+    margin-bottom: 10px;
+}
+
+.ls-green-container{
+    display: flex;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #12A67C;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+
+.ls-green-img{
+    max-width: 55%;
+    height: auto;
+    width: 45%;
+}
+
+.ls-green-container h1{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.ls-green-container p{
+    width: 520px;
+    font-size: 16px;
+}
+
+.ls-green-container ul{
+    margin-left: 15px;
+}
+
+.ls-green-container ul li{
+    margin-bottom: 10px;
+}
+
+
+.ls-orange-container{
+    display: flex;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(242, 110, 34, 0.92);
+    color: #FFF;
+    justify-content: space-evenly;
+    
+}
+
+.ls-orange-img{
+    max-width: 45%;
+    height: auto;
+    width: 400px;
+}
+
+.ls-orange-container h1{
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.ls-orange-container p{
+    width: 500px;
+    font-size: 18px;
+}
+
+.ls-orange-container h3{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.ls-orange-container ul{
+    margin-left: 15px;
+}
+.ls-orange-container ul li{
+    margin-bottom: 10px;
+}
+
 .background-container {
     position: relative;
 }
@@ -406,71 +413,114 @@ nav ul li a:hover::after{
     text-align:center;
 }
 
-.journey-container{
+.donate-container{
+    background: #F26E22;
+    color: #FFF;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.donate-container h2{
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+
+.donate-container p{
+    margin: 20px 8px;
+}
+
+.orange{
+    background: #FFF;
+    box-shadow: -1px 4px 9px 2px rgba(0,0,0,0.75);
+}
+
+.orange a {
+    color: #000;
+    font-size: 18px;
+}
+
+.nurture-img{
+    width: 500px;
+    margin-top: 20px;
+}
+
+/*------ css for donate page -------- */
+.donate-img{
+    width: 1440px;
+    height:80%;
+}
+.donation-body-container{
     padding-top: 100px;
     padding-bottom: 100px;
     background: #FFF;
     color: #000;
-    justify-content: space-evenly;
-}
-
-.journey-img{
-    width: 600px;
-    height: auto;
-    /*margin-left: 100px;*/
-}
-
-.journey-container h1{
-    margin-bottom: 10px;
-    margin-top: 60px;
-    color: #12A67C;
-}
-.orange-bar{
-    background: #F26E22;
-    width: 193px;
-    height: 6px;
-    margin-bottom: 15px;
-
-}
-.journey-container p{
-    width: 500px;
+    margin: 20px 100px;
     font-size: 18px;
+
 }
 
-.progDescription-container{
+span{
+    font-weight: bold;
+}
+
+.light-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    opacity: 50%;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.donation-body-container h2{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.zelle-cashapp-buttons{
+    margin-top: 50px;
     display: flex;
-    margin-top: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: #12A67C;
-    color: #FFF;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
-    
 }
 
-.progDescription-img{
-    max-width: 55%;
+.cashapp-button{
+    width: 300px;
     height: auto;
-    width: 45%;
 }
 
-.progDescription-container h1{
-    margin-bottom: 10px;
-    margin-top: 40px;
+.zelle-button{
+    width: 250px;
+    height: 100px;
+    border-radius: 120px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.progDescription-container p{
-    width: 520px;
-    font-size: 18px;
+.zelle-button img{
+    width: 150px;
+    height: auto;    
 }
 
+.zelle-cashapp-qr-codes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-
-
-
-
-
+.donation-body-container ol li{
+    margin-top: 20px;
+    margin-left: 19px;
+}
 /*------ css for small screens ------ */
 nav .fas {
     display: none;

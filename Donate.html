@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - The Bridge To Independence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3497f25522.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="homepage.html">About</a></li>
+                <li><a href="Vocational Skills.html">Vocational Skills</a></li>        
+                <li><a href="Life Skills.html">Life Skills</a></li>
+                <li>                
+                    <div class="donate">
+                        <a href="Donate.html">Donate</a>
+                    </div>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div class="background-container">
+            <img src="./images/donate.jpg" class="donate-img">
+            <div class="overlay">
+                <h1>Donate</h1>
+                <p>Fueling Futures: Donate to Empower Foster Youth in Diesel Tech Education!</p>
+            </div>
+    </div>
+
+    <div class="donation-body-container">
+        <p>
+            By contributing to our cause, you play a <span>vital</span> role in breaking down barriers and 
+            creating lasting impact. With your support, foster youth gain access to a specialized
+            vocational program that not only imparts valuable diesel tech skills but also instills 
+            confidence and resilience. 
+            <br><br>
+            Your generosity helps build a foundation for these young individuals, paving the way 
+            for self-sufficiency and success in their chosen careers. Every donation, no matter the 
+            size, makes a meaningful difference in the lives of foster youth pursuing a brighter, 
+            empowered future.
+            <br><br>
+            Together, <span>let's transform lives</span> and ignite opportunities for success in the world of 
+            diesel technology.
+                                        
+        </p>
+
+        <p class = "light-text">
+            The Bridge to Independence is a 501(c)3 tax-exempt organization, and your donation is 
+            tax-deductible within the guidelines of U.S. law. To claim a donation as a deduction on your 
+            U.S. taxes, please keep your payment confirmation as your official record.
+        </p>
+
+        <p>
+            Support our cause by contributing through Zelle, Cash App, or by check. Your donation helps us make 
+            a positive impact, providing vital resources and support to those in need. Join us in making a difference 
+            today
+        </p>
+
+        <h2>Donating via Cash App or Zelle</h2>
+        <p>If you want to donate through Zelle or Cash App you can scan the respective QR Codes or click their buttons.</p>
+    
+        <div class="zelle-cashapp-buttons">
+            <a href="https://cash.app/matthewskelton7">
+                <img src="./images/cash-app-button.png" class="cashapp-button">
+            </a>
+            <div class = "zelle-button">
+                <a href="https://cash.app/matthewskelton7">
+                    <img src="./images/zelle-button.png">
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="zelle-cashapp-qr-codes">
+            <img src="./images/cashapp-qr-code.png" class="">
+
+            <img src="./images/zelle-qr-code.png">
+
+        </div>
+
+        <h2>Donating via Check</h2>
+
+        <ol>If you would like to donate via a check, follow these steps:
+            <li>Make the check payable to <span>The Bridge to Independence</span></li>
+            <li>Mail the check to our Headquarters: <span>1201 N Orange Street #400 Wilmington, DE 19801</span></li>
+            <li>Keep a record of this charitable donation for your taxes</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <ul class="footer-tabs">
+            <li><a href="homepage.html">About</a></li>
+            <li><a href="Vocational Skills.html">Vocational Skills</a></li>        
+            <li><a href="Life Skills.html">Life Skills</a></li>
+            <li><a href="Donate.html">Donate</a></li>
+        </ul>
+        <div class="content-container">
+            <div class = "disclaimer-container">
+                <p>
+                    All rights reserved. “The Bridge to Independence” is a registered service mark owned by The Bridge to 
+                    Independence®. The Bridge to Independence® is a tax-exempt 501(C)(3) nonprofit organization (Tax ID: 
+                    84-3978501).  Your restricted gift is tax-deductible as allowed by law.
+                </p>
+            </div>
+            <div class = "address-container">
+                <p>Headquarters</p>
+                <p>1201 N Orange Street #400 Wilmington, DE 19801</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+            
+        }   
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+
+</body>
+</html>
