@@ -113,7 +113,7 @@
         </div>
 
         <div class="boxes">
-            <img class = "box-img" src = "images/donate.png">
+            <img class = "box-img" src = "images/donate-box.png">
             <h2>Donate</h2>
             <p>
                 Support our mission by donating; your contribution fuels education, opens doors, and transforms 
@@ -187,5 +187,22 @@
         }
     </script>
 
+    <script>
+        function handleScroll() {
+            var logoContainer = document.querySelector('.logo-container');
+            var logoImage = document.querySelector('.logo');
+            
+            if (window.scrollY > logoContainer.offsetTop + logoContainer.offsetHeight) {
+                // If scrolled down past the logo-container, make the logo image visible
+                logoImage.style.display = 'block';
+            } else {
+                // Otherwise, hide the logo image
+                logoImage.style.display = 'none';
+            }
+        }
+
+        // Attach the handleScroll function to the window's scroll event
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </body>
 </html>
