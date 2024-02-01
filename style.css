@@ -38,11 +38,18 @@ nav{
     z-index: 3;
 }
 
+
 .logo{
     width: 190px;
     height:auto;
     margin-left: 150px;
 }
+ 
+.fade-in-image {
+	transition: 1s all ease-in-out;
+	-moz-transition: 1s all ease-in-out;
+	-webkit-transition: 1s all ease-in-out;
+  }
 
 nav ul{
     margin: 0;

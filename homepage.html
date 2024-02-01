@@ -10,8 +10,9 @@
 <body>
     <div class="header">
         <nav>
-            <img src="./images/logo.png" class="logo">
-            
+            <div class="fade-in-image">
+                <img src="./images/logo.png" class="logo">
+            </div>
             <ul id="sidemenu">
                 <li><a href="homepage.html">About</a></li>
                 <li><a href="Vocational Skills.html">Vocational Skills</a></li>    
@@ -182,8 +183,7 @@
             
         }   
         function closemenu(){
-            sidemenu.style.right = "-200px";
-            
+            sidemenu.style.right = "-200px"; 
         }
     </script>
 
@@ -194,10 +194,10 @@
             
             if (window.scrollY > logoContainer.offsetTop + logoContainer.offsetHeight) {
                 // If scrolled down past the logo-container, make the logo image visible
-                logoImage.style.display = 'block';
+                logoImage.style.top = "0";
             } else {
                 // Otherwise, hide the logo image
-                logoImage.style.display = 'none';
+                logoImage.style.top = "200px"; 
             }
         }
 
