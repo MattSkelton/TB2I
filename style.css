@@ -551,31 +551,78 @@ nav .fa-solid{
     nav .fas{
         display: block;
         font-size: 25px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        padding-bottom: 50px;
+        cursor: pointer;
     }
+
     nav ul{
-        background:#ff004f;
-        position: fixed;
+        background:#F26E22;
+        position: absolute;
         top: 0;
         right: -200px;
         width: 200px;
         height: 100vh;
+        margin-top: 0;
         padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
+        justify-content: flex-start;
+        flex-direction: column;
     }
 
-    nav .fas{
+    nav ul li{
         display: block;
-        position: absolute;
-        top: 25px;
-        left: 20px;
-        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 50px;
+        top: 800px;
+
     }
+
     nav .fa-solid{
         display: block;
+        font-size: 22px;
     }
+
+    .donate{
+        background: #12A67C;
+        margin-top: 0;
+        margin-left: -15px;
+    }
+    
+        
+    .ls-green-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        justify-content: space-evenly;
+    }
+
+    .ls-green-img{
+        max-width: 40%;
+        height: auto;
+        width: 10%;
+        padding: 20px;
+    }
+
+    .ls-green-container h1{
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .ls-green-container p{
+        width: 520px;
+        font-size: 16px;
+    }
+
+    .ls-green-container ul{
+        margin-left: 15px;
+    }
+
+    .ls-green-container ul li{
+        margin-bottom: 10px;
+    }
+
 }
