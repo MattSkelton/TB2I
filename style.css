@@ -607,7 +607,7 @@ nav .fa-solid{
     .ls-green-container{
         flex-direction: column;
         margin-top: 100px;
-        padding: 150px 40px;
+        padding: 150px 80px;
     }
 
     .ls-green-img{
@@ -634,7 +634,7 @@ nav .fa-solid{
     .ls-white-container{
         flex-direction: column;
         margin-top: 50px;
-        padding: 80px 40px;
+        padding: 80px 80px;
     }
     
     .ls-white-img{
@@ -666,7 +666,7 @@ nav .fa-solid{
     .ls-orange-container{
         flex-direction: column;
         margin-top: 100px;
-        padding: 150px 40px;   
+        padding: 150px 80px;   
     }
 
     .ls-orange-img{
@@ -691,7 +691,7 @@ nav .fa-solid{
 
     .threeBox-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 100px 100px 0 100px;
         padding: 100px 0;
         color: #FFF;
@@ -700,6 +700,7 @@ nav .fa-solid{
 
     .boxes{
         background: #707070;
+        margin-bottom: 50px;
         width: 325px;
         height: 530px;
         display: flex;
