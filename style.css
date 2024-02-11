@@ -168,8 +168,8 @@ nav ul li a:hover::after{
 }
 
 .boxes p{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .box-button{
@@ -179,12 +179,13 @@ nav ul li a:hover::after{
     height: 45px;
     display: flex;
     margin-top: 20px;
+    padding-top: 10px;
     align-self: center;   
     justify-content: center;
     transition: background .75s, transform .75s;
 }
 
-.box-button a{
+.box-button{
     text-decoration: none;
     position: relative;
     font-style: normal;
@@ -198,6 +199,8 @@ nav ul li a:hover::after{
 .box-donate{
     margin-top: 40px;
     width: 100px;
+    color: white;
+    text-decoration: none;
 }
 .box-button:hover{
     transform: scale(1.05);
@@ -310,7 +313,7 @@ nav ul li a:hover::after{
 .ls-white-container h3{
     margin-bottom: 30px;
     margin-top: 20px;
-    width: 200px;
+    width: 400px;
 }
 
 .ls-white-container p{
@@ -592,6 +595,7 @@ nav .fa-solid{
     nav ul li a{
         color: #FFF;
     }
+    
     nav .fa-solid{
         display: block;
         font-size: 22px;
@@ -603,7 +607,6 @@ nav .fa-solid{
         margin-left: -15px;
     }
     
-        
     .ls-green-container{
         flex-direction: column;
         margin-top: 100px;
@@ -690,31 +693,32 @@ nav .fa-solid{
     }
 
     .threeBox-container{
-        display: flex;
         flex-direction: column;
-        margin: 100px 100px 0 100px;
-        padding: 100px 0;
-        color: #FFF;
-        justify-content: space-evenly;
     }
 
     .boxes{
-        background: #707070;
         margin-bottom: 50px;
-        width: 325px;
-        height: 530px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
-    .boxes h2{
-        margin-bottom: 10px;
+    .logo{
+        margin-left: 70px;
     }
 
-    .boxes p{
-        margin-left: 15px;
-        margin-right: 15px;
+        
+    .footer{
+        padding-left: 30px;
     }
 
+    .footer ul{
+        padding-top: 20px;
+    }
+
+    .footer ul li a{
+        font-size: 18px;
+    }
+
+    .footer p {
+        margin-left: 10px;
+        font-size: 12px;
+    }
 }
