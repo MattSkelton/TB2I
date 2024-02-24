@@ -175,8 +175,8 @@ nav ul li a:hover::after{
 .box-button{
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     background: #12A67C;
-    width: 140px;
-    height: 45px;
+    width: 180px;
+    height: 60px;
     display: flex;
     margin-top: 20px;
     padding-top: 10px;
@@ -198,7 +198,6 @@ nav ul li a:hover::after{
 
 .box-donate{
     margin-top: 40px;
-    width: 100px;
     color: white;
     text-decoration: none;
 }
@@ -445,26 +444,22 @@ nav ul li a:hover::after{
 .donate-container h2{
     margin-right: 9px;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .donate-container p{
     margin: 20px 8px;
+    font-size: 22px;
 }
 
 .orange{
     background: #FFF;
+    color: #000;
+    font-size: 30px;
     box-shadow: -1px 4px 9px 2px rgba(0,0,0,0.75);
 }
 
-.orange a {
-    color: #000;
-    font-size: 18px;
-}
 
-.nurture-img{
-    width: 500px;
-    margin-top: 20px;
-}
 
 /*------ css for donate page -------- */
 .donate-img{
@@ -561,6 +556,9 @@ nav .fa-solid{
         font-size: 30px;
     }
 
+    nav{
+        padding-right: 50px;
+    }
     nav .fas{
         display: block;
         font-size: 25px;
@@ -582,6 +580,7 @@ nav .fa-solid{
         padding-top: 50px;
         justify-content: flex-start;
         flex-direction: column;
+        transition: right 0.5s;
     }
 
     nav ul li{
@@ -614,8 +613,10 @@ nav .fa-solid{
     }
 
     .ls-green-img{
-        height: auto;
+        width: auto;
         padding: 20px;
+        max-width: 90%;
+        margin-top: 30px;
     }
 
     .ls-green-container h1{
@@ -675,6 +676,8 @@ nav .fa-solid{
     .ls-orange-img{
         width: auto;
         margin-top: 50px;
+        max-width: 90%;
+        margin-bottom: 30px;
     }
 
     .nurture-img{
@@ -694,10 +697,14 @@ nav .fa-solid{
 
     .threeBox-container{
         flex-direction: column;
+        margin-left: 50px;
+        justify-content: center;
+
     }
 
     .boxes{
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+        justify-content: center;
     }
 
     .logo{
@@ -720,5 +727,66 @@ nav .fa-solid{
     .footer p {
         margin-left: 10px;
         font-size: 12px;
+    }
+
+    .overlay {
+        font-size: 16px;
+        height: 98.8%;
+    }
+
+    .overlay p {
+        margin-top: 10px;
+    }
+
+    .donation-body-container{
+        font-size: 16px;
+    }
+    
+    .light-text{
+        font-size: 16px;
+    }
+    
+    .zelle-cashapp-buttons{
+        margin: 30px 0;
+        flex-direction: column;
+    }
+    
+    .cashapp-button{
+        width: 325px;
+    }
+    
+    .zelle-cashapp-qr-codes{
+        flex-direction: column;
+    }
+
+    .cashapp-qr-code{
+        max-width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .zelle-qr-code{
+        max-width: 80%;
+
+    }
+
+    .orange{
+        font-size: 28px;
+    }
+    
+    .donate-container h2{
+        margin-right: 9px;
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+    
+    .donate-container p{
+        margin: 20px 8px;
+        font-size: 20px;
+    }
+
+    .box-button{
+        width: 160px;
+        height: 60px;
+        display: flex;
     }
 }
